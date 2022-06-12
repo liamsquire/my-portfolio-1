@@ -4,29 +4,41 @@ import image1 from '../assets/image-1.jpg'
 
 const features2 = [
   {
-    name: 'Github',
+    name: 'Git and Github',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Git is an awesome tool and GitHub is a great service for helping track changes in a coded based project and sharing that code with others, either privately or publicly. ',
     icon: <FontAwesomeIcon icon="fa-brands fa-github" className="h-8 w-8" />,
   },
   {
     name: 'Javascript',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Javascript is the foundation in doing nice things on websites. From button click effects, to loading new content, switching colours and a whole host more. ',
       icon: <FontAwesomeIcon icon="fa-brands fa-js" className="h-8 w-8" />,
   },
   {
     name: 'HTML 5',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'HTML - the markup language of the web. Crucial in developing websites and web based apps.',
       icon: <FontAwesomeIcon icon="fa-brands fa-html5" className="h-8 w-8" />,
   },
   {
     name: 'CSS',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Before CSS, styling up web pages was a chore and messy. CSS revolutionsied how we handle content and presentation.',
       icon: <FontAwesomeIcon icon="fa-brands fa-css3-alt" className="h-8 w-8" />,
   },
+  {
+  name: 'SCSS',
+  description:
+    'SCSS is a layer above CSSI it allows us to do some fancy programmming style things with CSS. ',
+    icon: <FontAwesomeIcon icon="fa-brands fa-css3-alt" className="h-8 w-8" />,
+},
+{
+  name: 'PHP',
+  description:
+    'PHP - a tool used on many millions of websites.  All those WordPress websites are built using PHP.',
+    icon: <FontAwesomeIcon icon="fa-brands fa-css3-alt" className="h-8 w-8" />,
+},
 ]
 
 const callouts = [
@@ -83,17 +95,13 @@ const callouts = [
   export default function Example() {
     return (
     <div>
-
-
-
-
-
       <div className="bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto pt-0 pb-16 sm:pt-8 sm:pb-24 lg:pt-16 lg:pb-32 lg:max-w-none">
-              <div className="flex items-stretch flex-wrap ">
+          <div className="max-w-2xl mx-auto pt-16 pb-16 sm:pt-8 sm:pb-24 lg:pt-16 lg:pb-32 lg:max-w-none">
+              {/* <div className="flex items-stretch flex-wrap"> */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                 {callouts.map((callout) => (
-                    <div class="max-w-sm lg:w-full bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mr-2 mb-10">
+                    <div class="sm:w-full lg:w-full bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mr-2 mb-10">
                     <a href="#">
                         <img class="rounded-t-lg" src={image1} alt="" />
                     </a>
@@ -145,12 +153,12 @@ const callouts = [
       <div className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Transactions</h2>
+          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Technologies</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            A better way to send money
+            Some of the main technologies I use
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            I'm a Fullstack Web Developer with over 20 years experience. I love building websites and web apps that make a difference. Come look at some of my work or get in touch.
+            I'm always learning and keen to try out new technologies so I can continually improve older code bases or be able to do new things in smarter ways.
           </p>
         </div>
 

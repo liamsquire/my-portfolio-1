@@ -101,6 +101,9 @@ const projects = [
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto pt-16 pb-16 sm:pt-8 sm:pb-24 lg:pt-16 lg:pb-32 lg:max-w-none">
               {/* <div className="flex items-stretch flex-wrap"> */}
+              <h2 class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 mb-[60px]">
+              Portfolio
+            </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                 {projects.map((project, index) => (
 
@@ -137,7 +140,18 @@ const projects = [
 
 
 
-            <h2 className="text-3xl font-extrabold text-gray-900 pt-5 pb-5">Portfolio</h2>
+            {/* <h2 className="text-3xl font-extrabold text-gray-900 pt-5 pb-5">Portfolio</h2> */}
+      
+            {/* <h2 class="text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              Portfolio
+            </h2> */}
+            <h2 class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
+              Portfolio
+            </h2>
+
+
+            
+
             <p>Just a few of the many projects I've worked on.</p>
   
             <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-x-6">

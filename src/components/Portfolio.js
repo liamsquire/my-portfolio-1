@@ -2,18 +2,24 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import image1 from '../assets/image-1.jpg' 
 
-const features2 = [
+const skills = [
   {
-    name: 'Git and Github',
+    name: 'React',
     description:
-      'Git is an awesome tool and GitHub is a great service for helping track changes in a coded based project and sharing that code with others, either privately or publicly. ',
-    icon: <FontAwesomeIcon icon="fa-brands fa-github" className="h-8 w-8" />,
+      'A Javascript library for building user interfaces, such as this website.',
+      icon: <FontAwesomeIcon icon="fa-brands fa-css3-alt" className="h-8 w-8" />,
   },
   {
     name: 'Javascript',
     description:
-      'Javascript is the foundation in doing nice things on websites. From button click effects, to loading new content, switching colours and a whole host more. ',
+      'One of the core technologies of the web. ',
       icon: <FontAwesomeIcon icon="fa-brands fa-js" className="h-8 w-8" />,
+  },
+  {
+    name: 'PHP',
+    description:
+      'A programming language used on many millions of websites.',
+      icon: <FontAwesomeIcon icon="fa-brands fa-css3-alt" className="h-8 w-8" />,
   },
   {
     name: 'HTML 5',
@@ -24,21 +30,58 @@ const features2 = [
   {
     name: 'CSS',
     description:
-      'Before CSS, styling up web pages was a chore and messy. CSS revolutionsied how we handle content and presentation.',
+      'A powerful aid in styling websites.',
       icon: <FontAwesomeIcon icon="fa-brands fa-css3-alt" className="h-8 w-8" />,
   },
   {
   name: 'SCSS',
   description:
-    'SCSS is a layer above CSSI it allows us to do some fancy programmming style things with CSS. ',
+    'SCSS is a preprocessor scripting language that is compiled into CSS.',
     icon: <FontAwesomeIcon icon="fa-brands fa-css3-alt" className="h-8 w-8" />,
 },
 {
-  name: 'PHP',
+  name: 'Git',
   description:
-    'PHP - a tool used on many millions of websites.  All those WordPress websites are built using PHP.',
+    'Git is a great tool to help track changes in software and allows us to share that code with others, such as a private team or the public.',
+  icon: <FontAwesomeIcon icon="fa-brands fa-github" className="h-8 w-8" />,
+},
+{
+  name: 'SQL / MySQL',
+  description:
+    'I often use MySQL for storing data and SQL for querying, updating and deleting data.',
+    icon: <FontAwesomeIcon icon="fa-solid fa-database" className="h-6 w-6" />,
+},
+{
+  name: 'Bootstrap',
+  description:
+    'A free and open-source CSS framework supporting responsive, mobile-first front-end web development.',
+    icon: <FontAwesomeIcon icon="fa-brands fa-bootstrap" className="h-8 w-8"/>,
+},
+{
+  name: 'Zurb Foundation',
+  description:
+    'A free and open-source responsive front-end framework',
+    icon: <FontAwesomeIcon icon="fa-solid fa-wand-magic-sparkles" className="h-6 w-6" />,
+},
+{
+  name: 'Tailwind CSS',
+  description:
+    'Tailwind CSS is a framework to quickly style up websites. This website uses Tailwind CSS.',
     icon: <FontAwesomeIcon icon="fa-brands fa-css3-alt" className="h-8 w-8" />,
 },
+{
+  name: 'Terminal Four Site Manager',
+  description:
+    'An enterprise Content Management System.',
+    icon: <FontAwesomeIcon icon="fa-solid fa-align-left" className="h-6 w-6"/>,
+},
+{
+  name: 'Wordpress',
+  description:
+    'The most popular Content Management System on the internet.',
+    icon: <FontAwesomeIcon icon="fa-brands fa-wordpress" className="h-8 w-8"/>,
+},
+
 ]
 
 const projects = [
@@ -49,7 +92,7 @@ const projects = [
       imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
       href: '#',
       icons: [<FontAwesomeIcon icon="fa-brands fa-html5" className="mr-2 h-7 w-7 text-orange-600" />, <FontAwesomeIcon icon="fa-brands fa-js" className="mr-2 h-30 w-30 text-yellow-500" />,<FontAwesomeIcon icon="fa-brands fa-php" className="mr-2 h-30 w-30 text-purple-500" />, <FontAwesomeIcon icon="fa-solid fa-image" className="mr-2 h-30 w-30 text-gray-500" />],
-      pets: ['dog', 'cat']
+      technologies: ['HTML', 'Javascript', 'CSS', 'PHP', 'T4 CMS','Adobe Photoshop'],
     },
     {
       name: 'Customised Content',
@@ -58,38 +101,43 @@ const projects = [
       imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
       href: '#',
       icons: [<FontAwesomeIcon icon="fa-brands fa-html5" className="mr-2 h-7 w-7 text-orange-600" />,<FontAwesomeIcon icon="fa-location-dot" className="mr-2 h-7 w-7 text-green-600" />, <FontAwesomeIcon icon="fa-brands fa-php" className="mr-2 h-30 w-30 text-purple-500" />, <FontAwesomeIcon icon="fa-brands fa-js" className="mr-2 h-30 w-30 text-yellow-500" />],
+      technologies: ['HTML', 'CSS', 'Javascript', 'Max-mind GEO IP Database', 'PHP', 'T4 CMS','Adobe Photoshop'],
     },
     {
         name: 'Reiki Rocks NI',
-        description: 'A Wordpress based website',
+        description: 'A Wordpress and Bootstrap based website',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
       imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
       href: '#',
       icons: [<FontAwesomeIcon icon="fa-brands fa-github" className="mr-2 h-30 w-30 text-black-500" />, <FontAwesomeIcon icon="fa-brands fa-js" className="mr-2 h-30 w-30 text-yellow-500" />, <FontAwesomeIcon icon="fa-brands fa-wordpress" className="mr-2 h-30 w-30 text-blue-300" />],
+      technologies: ['dog', 'cat'],
     },
     {
-        name: 'Reiki Rocks NI',
-        description: 'A Wordpress based website',
+        name: 'Funding and Scholarships Finder',
+        description: 'Helping students find scholarships',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
         icons: <FontAwesomeIcon icon="faGithub" />,
+        technologies: ['dog', 'cat'],
       },
       {
-        name: 'Wordpress',
-        description: 'Reiki Rocks NI',
+        name: 'Digital Scholars',
+        description: 'Connecting digital experts to power innovation and growth',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
         icons: <FontAwesomeIcon icon="faGithub" />,
+        technologies: ['dog', 'cat'],
       },
       {
         name: 'Wordpress',
-        description: 'Reiki Rocks NI',
+        description: 'Digital Scholarships',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
         icons: [<FontAwesomeIcon icon="fa-brands fa-js" className="mr-2 h-30 w-30 text-yellow-500" />, <FontAwesomeIcon icon="fa-brands fa-wordpress" className="mr-2 h-30 w-30 text-blue-300" />],
+        technologies: ['dog', 'cat'],
       },            
   ]
 
@@ -101,7 +149,7 @@ const projects = [
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto pt-16 pb-16 sm:pt-8 sm:pb-24 lg:pt-16 lg:pb-32 lg:max-w-none">
               {/* <div className="flex items-stretch flex-wrap"> */}
-              <h2 class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 mb-[60px]">
+              <h2 class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-500 mb-[60px]">
               Portfolio
             </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
@@ -125,14 +173,15 @@ const projects = [
                             Read more
                             <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         </a> */}
-                        
                         <div className="mt-auto">
-                          <span className="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded-full mt-4 mr-2">HTML 5</span>
-                          <span className="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded-full mt-4 mr-2">Javascript</span>
-                          <span className="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded-full mt-4 mr-2">PHP</span>
-                          <span className="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded-full mt-4 mr-2">CSS</span>
-                          <span className="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded-full mt-4 mr-2">Adobe Photoshop</span>
+                            {
+                              project.technologies.map((technology, index) => (
+                                  <span className="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-gray-200 text-gray-700 rounded-full mt-4 mr-2">{technology}</span>
+                              ))
+                            }
                         </div>
+                        
+                        
                     </div>
                 </div>
                 ))}
@@ -140,41 +189,7 @@ const projects = [
 
 
 
-            {/* <h2 className="text-3xl font-extrabold text-gray-900 pt-5 pb-5">Portfolio</h2> */}
-      
-            {/* <h2 class="text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              Portfolio
-            </h2> */}
-            <h2 class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
-              Portfolio
-            </h2>
 
-
-            
-
-            <p>Just a few of the many projects I've worked on.</p>
-  
-            <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-x-6">
-              {projects.map((project) => (
-                <div key={project.name} className="group relative mb-16">
-                  <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
-                    <img
-                      src={project.imageSrc}
-                      alt={project.imageAlt}
-                      className="w-full h-full object-center object-cover"
-                    />
-                  </div>
-                  <h3 className="mt-6 text-sm text-gray-500">
-                    <a href={project.href}>
-                      <span className="absolute inset-0" />
-                      {project.name}
-                    </a>
-                  </h3>
-                  <p className="text-base font-semibold text-gray-900">{project.description}</p>
-                  <p className="text-3xl">{project.icons}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>
@@ -182,21 +197,21 @@ const projects = [
       <div className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Technologies</h2>
+          
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Some of the main technologies I use
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-500">Technologies</span> & <span className="text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-500">Skills</span>
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            I'm always learning and keen to try out new technologies so I can continually improve older code bases or be able to do new things in smarter ways.
+            I'm always learning and adapting to the latest technolgies so I can continually improve older applications and find new ways of doing things.
           </p>
         </div>
 
         <div className="mt-10">
-          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-            {features2.map((feature) => (
+          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+            {skills.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
-                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                     {feature.icon}
                   </div>
                   <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>

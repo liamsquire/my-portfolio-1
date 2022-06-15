@@ -60,7 +60,7 @@ const certifications = [
         
 
         <div className="mt-20">
-          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-4 md:gap-x-12 md:gap-y-12">
+          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-12 md:gap-y-12">
             {certifications.map((cert) => (
               <div key={cert.name} className="relative mb-10 h-full">
                 <dt>

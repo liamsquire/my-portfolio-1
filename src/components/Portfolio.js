@@ -101,7 +101,7 @@ const projects = [
       imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
       href: '#',
       icons: [<FontAwesomeIcon icon="fa-brands fa-html5" className="mr-2 h-7 w-7 text-orange-600" />,<FontAwesomeIcon icon="fa-location-dot" className="mr-2 h-7 w-7 text-green-600" />, <FontAwesomeIcon icon="fa-brands fa-php" className="mr-2 h-30 w-30 text-purple-500" />, <FontAwesomeIcon icon="fa-brands fa-js" className="mr-2 h-30 w-30 text-yellow-500" />],
-      technologies: ['HTML', 'CSS', 'Javascript', 'Max-mind GEO IP Database', 'PHP', 'T4 CMS','Adobe Photoshop'],
+      technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'Max-mind GEO IP Database', 'T4 CMS','Adobe Photoshop'],
     },
     {
         name: 'Reiki Rocks NI',
@@ -110,7 +110,7 @@ const projects = [
       imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
       href: '#',
       icons: [<FontAwesomeIcon icon="fa-brands fa-github" className="mr-2 h-30 w-30 text-black-500" />, <FontAwesomeIcon icon="fa-brands fa-js" className="mr-2 h-30 w-30 text-yellow-500" />, <FontAwesomeIcon icon="fa-brands fa-wordpress" className="mr-2 h-30 w-30 text-blue-300" />],
-      technologies: ['dog', 'cat'],
+      technologies: ['Wordpress', 'HTML', 'CSS', 'Bootstrap', 'Javascript', 'PHP', 'Adobe Photoshop']
     },
     {
         name: 'Funding and Scholarships Finder',
@@ -119,7 +119,7 @@ const projects = [
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
         icons: <FontAwesomeIcon icon="faGithub" />,
-        technologies: ['dog', 'cat'],
+        technologies: ['HTML', 'CSS', 'Javascript', 'DataTables', 'PHP', 'T4 CMS', 'Adobe Photoshop'],
       },
       {
         name: 'Digital Scholars',
@@ -128,16 +128,16 @@ const projects = [
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
         icons: <FontAwesomeIcon icon="faGithub" />,
-        technologies: ['dog', 'cat'],
+        technologies: ['HTML', 'CSS', 'Javascript', 'DataTables', 'PHP', 'T4 CMS', 'Adobe Photoshop'],
       },
       {
-        name: 'Wordpress',
-        description: 'Digital Scholarships',
+        name: 'Bespoke Application for Future Learn MOOC',
+        description: 'Identity questionaire and auto-profiling',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
         icons: [<FontAwesomeIcon icon="fa-brands fa-js" className="mr-2 h-30 w-30 text-yellow-500" />, <FontAwesomeIcon icon="fa-brands fa-wordpress" className="mr-2 h-30 w-30 text-blue-300" />],
-        technologies: ['dog', 'cat'],
+        technologies: ['HTML', 'CSS', 'PHP', 'MySQL', 'Adobe Photoshop'],
       },            
   ]
 
@@ -199,7 +199,7 @@ const projects = [
         <div className="lg:text-center">
           
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            <span className="text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-500">Technologies</span> & <span className="text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-500">Skills</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-500">Technologies</span> &amp; <span className="text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-500">Skills</span>
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             I'm always learning and adapting to the latest technolgies so I can continually improve older applications and find new ways of doing things.
@@ -208,15 +208,15 @@ const projects = [
 
         <div className="mt-10">
           <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
-            {skills.map((feature) => (
-              <div key={feature.name} className="relative">
+            {skills.map((skill) => (
+              <div key={skill.name} className="relative">
                 <dt>
                   <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
-                    {feature.icon}
+                    {skill.icon}
                   </div>
-                  <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
+                  <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{skill.name}</p>
                 </dt>
-                <dd className="mt-2 ml-16 text-base text-gray-500">{feature.description}</dd>
+                <dd className="mt-2 ml-16 text-base text-gray-500">{skill.description}</dd>
               </div>
             ))}
           </dl>

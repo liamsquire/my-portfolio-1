@@ -1,4 +1,5 @@
 import logo from '../assets/logo-1.svg';
+import laptopImg from '../assets/laptop-v1.svg';
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
@@ -54,7 +55,7 @@ export default function Example() {
                 <div className="ml-auto md:ml-10">
                   <a href="#" download="Liam - Resume.pdf">
                     <button type="submit" className="px-4 py-1 text-sm text-white font-semibold rounded-full border bg-gradient-to-br bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-pink-600 hover:to-red-500 hover:border-transparent hover:text-white focus:outline-none">
-                    <FontAwesomeIcon icon="fa-solid fa-cloud-arrow-down" className="mr-3" /> Download CV
+                    <FontAwesomeIcon icon="fa-solid fa-cloud-arrow-down" className="mr-1" /> Download CV
                     </button>
                   </a>
                 </div>
@@ -70,7 +71,7 @@ export default function Example() {
 
             
 
-          <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+          <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex gap-10">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block mb-3">Hi there, </span>{' '}
@@ -79,6 +80,7 @@ export default function Example() {
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 I'm a Fullstack Web Developer with over 20 years experience in building websites and web apps that make a difference. Feel free to browse some of my work or get in touch.
               </p>
+              
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
@@ -91,12 +93,22 @@ export default function Example() {
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md bg-gradient-to-br bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-pink-600 hover:to-red-500 hover:border-transparent text-white hover:text-white focus:outline-none md:py-4 md:text-lg md:px-10"
                   >
                       <FontAwesomeIcon icon="fa-solid fa-cloud-arrow-down" className="mr-3" /> Download CV
                   </a>
                 </div>
               </div>
+              
+              
+            </div>
+            <div className="hidden md:block">
+
+              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                <img src={laptopImg} alt="Laptop" />
+              </div>
+
+              
             </div>
           </main>
         </div>

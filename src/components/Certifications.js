@@ -1,18 +1,29 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import azureFundamentals from '../assets/certifications/microsoft-certified-azure-fundamentals.png'
+import ms365Fundamentals from '../assets/certifications/microsoft-365-certified-fundamentals.png'
 import googleDataAnalytics from '../assets/certifications/google-data-analytics-certificate.2.png'
 import googlePM from '../assets/certifications/google-data-analytics-certificate.2.png'
+import googleDM from '../assets/certifications/google-digital-marketing-certificate.png'
+import itil from '../assets/certifications/itil-badge.png'
 import divider1 from '../assets/svg-wave-3.svg'
 
 const certifications = [
   {
-    name: 'Microsoft Azure Fundamentals AZ-900',
+    name: 'Microsoft Certified: Azure Fundamentals',
     image: azureFundamentals,
     description:
-      '<p class="mb-4">Azure Fundamentals certification proves knowledge of cloud concepts, Azure services, Azure workloads, security and privacy in Azure, as well as Azure pricing and support. Familiarity with the general technology concepts, including concepts of networking, storage, compute, application support, and application development.</p><p>Azure Fundamentals can be used to prepare for other Azure role-based or specialty certifications, but it is not a prerequisite for any of them.</p>',
+      '<p class="mb-4">Azure Fundamentals certification proves knowledge of cloud concepts, Azure services, Azure workloads, security and privacy in Azure, as well as Azure pricing and support. Familiarity with the general technology concepts, including concepts of networking, storage, compute, application support, and application development.</p>',
       icon: <FontAwesomeIcon icon="fa-brands fa-google" className="h-8 w-8"/>,
-      link: "https://www.credly.com/badges/d588e46f-b67d-4cd9-9a96-6e64ec9ffd53/public_url",
+      link: "https://www.credly.com/badges/c3bb2cba-7499-4e0f-95e2-a50d88773104/public_url",
+  },
+  {
+    name: 'Microsoft 365 Certified: Fundamentals',
+    image: ms365Fundamentals,
+    description:
+      '<p class="mb-4">Demonstrate knowledge of cloud services, such as standard practices, considerations, and benefits. Show fluency in SaaS solutions; particularly Microsoft 365 offerings. Highlight familiarity with the Microsoft 365 cloud service options currently available.</p>',
+      icon: <FontAwesomeIcon icon="fa-brands fa-google" className="h-8 w-8"/>,
+      link: "https://www.credly.com/badges/c3bb2cba-7499-4e0f-95e2-a50d88773104/public_url",
   },
   {
     name: 'Google Project Management Professional Certificate',
@@ -31,10 +42,20 @@ const certifications = [
       link: "https://www.credly.com/badges/face36c5-bb2c-4dfa-8166-ced440f6f7fa/public_url",
   },
   {
-    name: 'ITIL Certification',
+    name: 'Google: Fundamentals of Digital Marketing',
+    image: googleDM,
     description:
-      'Association of Project Management Group (APMG) ITIL Foundation Certificate.',
+      'A Google delivered course covering the fundamentals of digital marketing including online business strategy, search campigns, social media, mobile responsiveness, online advertising, web analytics, ecommerce, and international expansion.',
       icon: <FontAwesomeIcon icon="fa-brands fa-html5" className="h-8 w-8" />,
+      link: "https://drive.google.com/file/d/1NKgtOMClrzq7WTd24d4L1vZa2umAwB5u/view?usp=sharing"
+  },
+  {
+    name: 'ITIL Certification',
+    image: itil,
+    description:
+      'Association of Project Management Group (APMG) ITIL Foundation Certificate. ITIL is an adaptable framework for managing services within the digital era. Through our best practice modules, ITIL helps to optimize digital technologies to co-create value with consumers, drive business strategy, and embrace digital transformation.',
+      icon: <FontAwesomeIcon icon="fa-brands fa-html5" className="h-8 w-8" />,
+      link: "https://drive.google.com/file/d/14aIBWtU-i_lzAzh1_mbGv1j-YLlCnPmv/view?usp=sharing"
   },
 ]
   
